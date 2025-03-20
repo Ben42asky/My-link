@@ -14,7 +14,7 @@ const services = [
     icon: <Bot className="w-12 h-12 text-primary" />,
     title: "AI Integration",
     description:
-      "Utilizing AI tools for code assistance, image, text, and sound generation to enhance educational and health content.",
+      "Utilizing AI tools for code assistance, content, image, text, and sound generation to enhance educational and health content.",
   },
   {
     icon: <Layout className="w-12 h-12 text-primary" />,
@@ -32,12 +32,6 @@ const services = [
     title: "Technical Training",
     description:
       "Conducting workshops on research skills, financial management, and well-being for colleagues, helping upskill teams.",
-  },
-  {
-    icon: <Database className="w-12 h-12 text-primary" />,
-    title: "Database Management",
-    description:
-      "Designing and implementing database solutions using MySQL to support web applications and business operations.",
   },
 ]
 

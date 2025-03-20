@@ -36,7 +36,7 @@ export default function AboutSection() {
             <p className="text-foreground/80 mb-8">
               With experience in sales, project management, and team leadership, I bring a strong work ethic and
               adaptability to every project. I'm passionate about bridging technology and user needs to create impactful
-              solutions.
+              solutions, I'm committed to continuous learning and growth and passionate about Cybersecurity.
             </p>
 
             <div className="grid grid-cols-2 gap-6">
@@ -59,10 +59,6 @@ export default function AboutSection() {
               <div className="flex items-center gap-3">
                 <Briefcase className="text-primary" />
                 <span>Project Management</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Server className="text-primary" />
-                <span>Database Management</span>
               </div>
             </div>
 

@@ -31,7 +31,7 @@ export default function ResumeSection() {
           >
             <div className="mb-16">
               <div className="flex items-center gap-3 mb-6">
-                <Briefcase className="text-primary" size={24} />
+                <Briefcase className="text-primary" size={30} />
                 <h3 className="text-2xl font-semibold">Work Experience</h3>
               </div>
 
@@ -55,14 +55,6 @@ export default function ResumeSection() {
                       Built and maintained full-stack applications using React, JavaScript, Node.js, Python, and MySQL.
                     </li>
                     <li>
-                      Developed and pitched new software tools, leading to the expansion of the company's tech
-                      offerings.
-                    </li>
-                    <li>
-                      Integrated AI-powered features via APIs, streamlining workflows and enhancing product
-                      capabilities.
-                    </li>
-                    <li>
                       Educated business owners on the benefits of a website, effectively communicating value and
                       managing expectations.
                     </li>
@@ -80,7 +72,7 @@ export default function ResumeSection() {
           >
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <Award className="text-primary" size={24} />
+                <Award className="text-primary" size={30} />
                 <h3 className="text-2xl font-semibold">Technical Skills</h3>
               </div>
 
@@ -128,7 +120,7 @@ export default function ResumeSection() {
 
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <Award className="text-primary" size={24} />
+                <Award className="text-primary" size={30} />
                 <h3 className="text-2xl font-semibold">Languages</h3>
               </div>
 
@@ -148,7 +140,7 @@ export default function ResumeSection() {
 
             <div className="mb-8">
               <div className="flex items-center gap-3 mb-6">
-                <Heart className="text-primary" size={24} />
+                <Heart className="text-primary" size={30} />
                 <h3 className="text-2xl font-semibold">Values & Interests</h3>
               </div>
 
@@ -159,28 +151,21 @@ export default function ResumeSection() {
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Honesty</span>
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Humility</span>
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Hard work</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Integrity</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Respect</span>
                   </div>
                 </div>
                 <div>
                   <h4 className="font-semibold mb-2">Interests</h4>
                   <div className="flex flex-wrap gap-2">
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Game development</span>
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Mechanics</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Cybersecurity</span>
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Fitness</span>
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Agriculture</span>
+                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-sm">Environment Conservation</span>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div className="mt-8 text-center">
-              <a
-                href="#"
-                className="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
-              >
-                <Download size={18} />
-                Download CV
-              </a>
             </div>
           </motion.div>
         </div>

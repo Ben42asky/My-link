@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ArrowDown } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function HeroSection() {
   return (
@@ -13,47 +14,79 @@ export default function HeroSection() {
       </div>
 
       <div className="container mx-auto px-4 z-10">
-        <div className="max-w-3xl mx-auto text-center">
-          <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <h2 className="text-xl md:text-2xl font-medium text-primary mb-4">Hello, I'm</h2>
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
+          {/* Professional Image - Smaller and on the left */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+            className="w-full lg:w-2/5 relative order-2 lg:order-1"
+          >
+            <div className="aspect-square relative rounded-2xl overflow-hidden shadow-xl mx-auto max-w-md">
+              <Image
+                src="/me.jpg?height=600&width=600"
+                alt="Benjamin Otieno - Full Stack Engineer"
+                fill
+                className="object-cover"
+                priority
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent mix-blend-overlay"></div>
+            </div>
           </motion.div>
 
+          {/* Text Content - On the right */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="text-center lg:text-left w-full lg:w-1/2 order-1 lg:order-2"
           >
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Benjamin Otieno</h1>
-          </motion.div>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="text-xl md:text-2xl font-medium text-primary mb-4"
+            >
+              Hello, I'm
+            </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <h3 className="text-2xl md:text-3xl font-medium text-foreground/80 mb-8">
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-4xl md:text-6xl font-bold mb-6"
+            >
+              Benjamin Otieno
+            </motion.h1>
+
+            <motion.h3
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="text-2xl md:text-3xl font-medium text-foreground/80 mb-8"
+            >
               <span className="typing-text">Full Stack Engineer</span>
-            </h3>
-          </motion.div>
+            </motion.h3>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
-          >
-            <Link
-              href="#contact"
-              className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
-              Get in Touch
-            </Link>
-            <Link
-              href="#projects"
-              className="bg-secondary text-foreground px-6 py-3 rounded-md hover:bg-secondary/90 transition-colors"
-            >
-              View My Work
-            </Link>
+              <Link
+                href="#contact"
+                className="bg-primary text-white px-6 py-3 rounded-md hover:bg-primary/90 transition-colors"
+              >
+                Get in Touch
+              </Link>
+              <Link
+                href="#projects"
+                className="bg-secondary text-foreground px-6 py-3 rounded-md hover:bg-secondary/90 transition-colors"
+              >
+                View My Work
+              </Link>
+            </motion.div>
           </motion.div>
         </div>
       </div>

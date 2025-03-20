@@ -10,9 +10,9 @@ interface Skill {
 }
 
 const SKILLS: Skill[] = [
-  { name: "JavaScript", percentage: 90, color: "#FF6384" },
-  { name: "Python", percentage: 85, color: "#36A2EB" },
-  { name: "React", percentage: 80, color: "#FFCE56" },
+  { name: "JavaScript", percentage: 80, color: "#FF6384" },
+  { name: "Python", percentage: 95, color: "#36A2EB" },
+  { name: "React", percentage: 70, color: "#FFCE56" },
   { name: "Node.js", percentage: 75, color: "#4BC0C0" },
   { name: "HTML/CSS", percentage: 90, color: "#9966FF" },
   { name: "MySQL", percentage: 70, color: "#FF9F40" },
